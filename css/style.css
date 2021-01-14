@@ -173,7 +173,7 @@ header {
     font-size: 20px;
 }
 .navbar-brand img{
-    width: 250px
+    height: 50px
 }
 .navbar .navbar-brand-sticky {
     display: none;
@@ -360,7 +360,7 @@ header {
 /* ============================================================================ */
 
 .banner_section{
-    background: url(../images/banner.jpg) center center repeat;
+    background: url(../images/top.png) center center repeat;
     background-size: cover;
     position: relative;
 }
@@ -866,7 +866,7 @@ footer .top-footer form button{
     position: absolute;
     top: 50px;
     right: 0;
-    content: 'Tecweb';
+    /* content: 'Tecweb'; */
     font-size: 200px;
     color: rgb(255 255 255 / 0.1);
     text-transform: uppercase;
