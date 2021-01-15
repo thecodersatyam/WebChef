@@ -103,6 +103,7 @@ p{
     line-height: 30px;
     color: #6a7c92;
     margin-top: 10px;
+    /* text-align: center; */
 }
 .img-responsive {
     height: auto;
@@ -152,7 +153,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 20px 25px;
+    padding: 10px 25px;
     pointer-events: initial;
     z-index: 2;
 }
@@ -606,7 +607,7 @@ header {
     top: -250px;
     width: 440px;
     height: 440px;
-    background: rgb(24 121 251 / 0.5);
+    background: rgb(197 42 72 / 0.5);
     content: '';
     visibility: hidden;
     opacity: 0;
@@ -683,6 +684,7 @@ header {
 /* ============================================================================ */
 
 .testimonial_section{
+    display: none;
     background: #C52A48;
     position: relative;
     z-index: 0
@@ -771,7 +773,7 @@ footer p b{
 }
 footer .top-footer{
     padding: 0 0 50px;
-    border-bottom: 1px solid rgb(24 121 251 / 70%)
+    border-bottom: 1px solid rgb(252 28 71 / 70%)
 }
 footer .top-footer .social{
     display: block;
@@ -820,11 +822,12 @@ footer .top-footer form button{
 }
 .btm_footer{
     margin: 40px 0 0;
-    border-bottom: 1px solid rgb(24 121 251 / 70%);
+    border-bottom: 1px solid rgb(252 28 71 / 70%);
     padding: 0 0 40px
 }
 .btm_footer img{
-    width: 250px
+    height: 250px;
+    padding-left: 30px;
 }
 .btm_footer .head{
     margin: 20px 0 0
@@ -840,7 +843,7 @@ footer .top-footer form button{
 .btm_footer ul li a{
     font-size: 16px;
     line-height: 30px;
-    color: #6a7c92;
+    color: #C52A48;
     transition: all linear 0.3s;
     text-decoration: none
 }
@@ -856,7 +859,7 @@ footer .top-footer form button{
 /* ============================================================================ */
 
 .top-section{
-    background: url(../images/top_section.jpg) center center repeat;
+    background: url(../images/cup.jpg) center center repeat;
     background-size: cover;    
     position: relative;
     z-index: 0;
@@ -907,7 +910,58 @@ footer .top-footer form button{
 .top-section ul li a{
     color: #C52A48;    
 }
-
+.top-section2{
+    background: url(../images/card.jpg) center center repeat;
+    background-size: cover;    
+    position: relative;
+    z-index: 0;
+    padding: 100px 0 60px
+}
+.top-section2:after{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    /* content: 'Tecweb'; */
+    font-size: 200px;
+    color: rgb(255 255 255 / 0.1);
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    font-weight: 600;
+    z-index: -4
+}
+.top-section2:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgb(0 0 0 / 0.6);
+    z-index: -1
+}
+.top-section2 .heading{
+    margin: 150px 0 0;
+    color: white;
+    font-size: 60px
+}
+.top-section2 p{
+    color: white;
+    margin: 20px 0 30px;
+}
+.top-section2 ul {
+    padding: 10px 30px;
+    margin: 0px;    
+    background: white;display: inline;
+}.top-section2 ul li{
+    padding: 0;
+    margin: 0px 10px 0 0;
+    display: inline-block;
+    color: black;
+    font-weight: 600
+}
+.top-section2 ul li a{
+    color: #C52A48;    
+}
 /* ============================================================================ */
 
 .privacy-policy{
@@ -994,10 +1048,18 @@ footer .top-footer form button{
 }
 .inner-page .inner-box .overlay .head{
     margin: 20px 0 0;
+    color: #000;
 }
 .inner-page .inner-box:hover .overlay{
     transform: translateX(0px);
-}.inner-page .inner-box:hover .heading{
+}
+
+.inner-page .inner-box:hover .overlay p a{
+    color: #C52A48;
+}
+
+
+.inner-page .inner-box:hover .heading{
     transform: translateX(100px);
 }
 .mar-50{
@@ -1044,7 +1106,8 @@ footer .top-footer form button{
     text-align: center;    
 }
 .contact-us .blue_text p{
-    font-size: 45px;
+    font-size: 2.8rem;
+    line-height: 1;
     color: white;
 }
 .contact-form{
@@ -1088,7 +1151,7 @@ footer .top-footer form button{
 .contact-form form select:focus{
     border:2px solid #C52A48;
 }
-.contact-form form button{
+.contact-form form .send-btn{
      padding: 15px 100px;
      border:none;
      background: #C52A48;
@@ -1111,7 +1174,7 @@ footer .top-footer form button{
     content: '';
     width: 100%;
     height: 100%;
-    background: rgb(3 73 167 / 0.8);
+    background: rgb(197 42 72 / 0.8);
     z-index: -1
 }
 .right-address .heading{
