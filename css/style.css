@@ -684,7 +684,7 @@ header {
 /* ============================================================================ */
 
 .testimonial_section{
-    display: none;
+    /* display: none; */
     background: #C52A48;
     position: relative;
     z-index: 0
