@@ -19,6 +19,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("#submit").on('click',function() {
+            alert($("#modelname1").find("option:selected").text()+' clicked!');
+           });
+      });
+    </script>
+       <script>
+        $(document).ready(function(){
+            $("#submit").on('click',function() {
+              alert($("#modelname2").find("option:selected").text()+' clicked!');
+             });
+        });
+      </script>
 </head>
 
 <body>
@@ -114,8 +130,8 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <label>Select a budget (approx will do)</label>
                                     <br>
-                                    <select>
-                                        <option>₹3000 - ₹5000 per month</option>
+                                    <select name="Budget" id="modelname1" class="form-control" >
+                                        <option >₹3000 - ₹5000 per month</option>
                                         <option>₹4000 - ₹6000 per month</option>
                                         <option>₹7000 - ₹8000 per month</option>
                                         <option>₹9000 - ₹10000 per month</option>
@@ -125,7 +141,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <label>How did you learn about PageTraffic?</label>
                                     <br>
-                                    <select>
+                                    <select name="Subject" id="modelname1" class="form-control">
                                         <option>Website Designing</option>
                                         <option>Website Development</option>
                                         <option>Search Engine Optimization</option>
