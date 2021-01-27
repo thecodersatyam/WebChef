@@ -582,7 +582,7 @@ header {
 /* ============================================================================ */
 
 .team_section{
-    background: aliceblue;
+    background: white;
 }
 .team_section .content{
     width: 750px;
@@ -1287,7 +1287,7 @@ footer .top-footer .social{
 /* body{background-color:#eee;} */
 
 #generic_price_table{
-	background-color: aliceblue;
+	background-color: white;
 }/*  */
 
 /*PRICE COLOR CODE START*/
@@ -1296,7 +1296,7 @@ footer .top-footer .social{
 }
 
 #generic_price_table .generic_content .generic_head_price{
-	background-color: #f6f6f6;
+	background-color: white;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
@@ -1359,6 +1359,7 @@ footer .top-footer .social{
 #generic_price_table{
 	/* margin: 50px 0 50px 0; */
     font-family: 'Raleway', sans-serif;
+    
 }
 .row .table{
     padding: 28px 0;
@@ -1369,7 +1370,9 @@ footer .top-footer .social{
 #generic_price_table .generic_content{
 	overflow: hidden;
 	position: relative;
-	text-align: center;
+    text-align: center;
+    border-style: groove;
+    
 }
 
 #generic_price_table .generic_content .generic_head_price {
@@ -1389,7 +1392,8 @@ footer .top-footer .social{
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head{
 	padding-top: 40px;
 	position: relative;
-	z-index: 1;
+    z-index: 1;
+    
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
@@ -1400,10 +1404,12 @@ footer .top-footer .social{
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    border-bottom: solid;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag{
-	padding: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: groove;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .price{
