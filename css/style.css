@@ -730,6 +730,7 @@ header {
     background: #C52A48;
     border:0;
     height: 1px;
+    margin-bottom: 2rem;
 }
 .testimonial_section .test-box ul{
     display: block;
